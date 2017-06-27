@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="clr-namespace:SDTDStudio.Styles">
+
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="pack://application:,,,/Styles/Dark/Accent.xaml"/>
+		<ResourceDictionary Source="pack://application:,,,/Styles/Dark/Theme.xaml"/>
+	</ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

@@ -1,11 +1,33 @@
 ﻿<Controls:MetroWindow x:Class="SDTDStudio.MainWindow"
-                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
-                      Title="MainWindow"
-                      Height="350"
-                      Width="525">
-    <Grid>
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+	BorderBrush="{ DynamicResource BorderBrush }"
+	NonActiveBorderBrush="{ DynamicResource NonActiveBorderColorBrush }"
+	NonActiveWindowTitleBrush="{ DynamicResource NonActiveWindowTitleColorBrush }"
+	BorderThickness="1"
+	Height="668"
+	Width="924"
+	MinHeight="668"
+	MinWidth="924"
+	Title="SDTD Studio"
+	Icon="Images/7dtdstudio.ico"
+	WindowStartupLocation="CenterScreen">
+	<Grid Margin="4">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="28"/>
+			<RowDefinition />
+		</Grid.RowDefinitions>
 
-    </Grid>
+		<DockPanel Grid.Row="0">
+			<Menu Height="26" Name="MainMenu" DockPanel.Dock="Top">
+				<MenuItem Header="File">
+					<MenuItem Header="Import"></MenuItem>
+				</MenuItem>
+			</Menu>
+		</DockPanel>
+
+		<DockPanel Grid.Row="1" Name="Dashboard">
+		</DockPanel>
+	</Grid>
 </Controls:MetroWindow>
